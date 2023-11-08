@@ -28,10 +28,10 @@ export default function Home() {
       {/* <Nav/> */}
       {/* flex min-h-screen flex-col items-center justify-between p-24 */}
       <Nav />
-      <section className="home">
+      {/* <section className="home"> */}
         {/* <img id="inicio" src="imagem-principal.png" alt="" /> */}
-      </section>
-{/* responsividade tirar a margin e padding --- add algo no layout central */}
+      {/* </section> */}
+
       <NossaHistoria1/>
       <NossaHistoria2/>
       <Prototipo/>

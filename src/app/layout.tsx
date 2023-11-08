@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ['latin'] })
 // }
 
 export default function RootLayout({
-  
+
   children,
 }: {
   children: React.ReactNode
@@ -22,11 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* <link rel="shortcut icon" href="/favicon.ico" /> */}
-     <link rel="icon" href="favicon.ico" />
-     {/* <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#000000" /> */}
+      <link rel="icon" href="favicon.ico" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <body className={inter.className}>{children}
-      {/* <Nav/>      
+        {/* <Nav/>      
 
       <Footer/> */}
       </body>

@@ -26,6 +26,9 @@ const Nav = () => {
   //   navLinks.classList.toggle('active');
   // });
 
+  // const isSmallScreen = window.innerWidth <= 1100; 
+  // Verifica se a tela é pequena
+
   return (
     <nav className="bg-gray-50 p-2 flex justify-between items-center fixed">
 
@@ -37,7 +40,7 @@ const Nav = () => {
             <svg xmlns="http://www.w3.org/2000/svg" className="w-15 h-7 sideBar button-x" aria-hidden="true" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
-            
+
             <Sidebar id="sideBar" />
           </div>
         ) : (
@@ -48,24 +51,16 @@ const Nav = () => {
         )}
 
       </button>
-
-
       {/* <button>
       <img src="../logo.png" alt="Logo da Pato a Jato" className="logo" onClick={showSiderbar} />
+      {/* <Sidebar id="sideBar"/> */}   {/*     <FaBars onClick={showSiderbar} />   {sidebar && <Sidebar active={setSidebar} />}}   </button> */}
 
-      {/* <Sidebar id="sideBar"/> */}
-      {/*     
-        <FaBars onClick={showSiderbar} />
-        {sidebar && <Sidebar active={setSidebar} />}}
-        </button> */}
-
-      <a href="#" className="flex items-center justify-center">
-        <img src="../logo.png" alt="Logo da Pato a Jato" className="logo h-8 mr-5" />
-      </a>
-
-      <a href="#" className="flex items-center">
-        <img src="../prototipo-icon.png" alt="Ícone do Protótipo da Pato a Jato" className="icon-popygua h-8 mr-5" />
-      </a>
+        <a href="#" className="flex items-center justify-center">
+          <img src="../logo.png" alt="Logo da Pato a Jato" className="logo h-8 mr-5" />
+        </a>
+        <a href="#" className="flex items-center">
+          <img src="../prototipo-icon.png" alt="Ícone do Protótipo da Pato a Jato" className="icon-popygua h-8 mr-5" />
+        </a>
 
     </nav>
   )
