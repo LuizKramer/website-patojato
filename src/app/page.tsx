@@ -1,6 +1,5 @@
 'use client'
 
-import Document, { Html, Head, Main, NextScript } from 'next/document';
 import Image from 'next/image'
 import { useState } from 'react';
 import Sidebar from '../../components/Sidebar';
@@ -21,29 +20,25 @@ import Destaques from '../../components/Destaques';
 export default function Home() {
 
   return (
-
-    //<Html lang="en">
-    // pages/index.js
-    <main className="">
+    <>
       {/* <Nav/> */}
       {/* flex min-h-screen flex-col items-center justify-between p-24 */}
-      <Nav />
       {/* <section className="home"> */}
-        {/* <img id="inicio" src="imagem-principal.png" alt="" /> */}
+      {/* <img id="inicio" src="imagem-principal.png" alt="" /> */}
       {/* </section> */}
 
-      <NossaHistoria1/>
-      <NossaHistoria2/>
-      <Prototipo/>
-      <Destaques/>
-      <AreasDeAtuacao/>
-      <Patrocinadores/>
-      <Premiacoes/>
+      <NossaHistoria1 />
+      <NossaHistoria2 />
+      <Prototipo />
+      <Destaques />
+      <AreasDeAtuacao />
+      <Patrocinadores />
+      <Premiacoes />
 
 
       <Footer />
+    </>
 
-    </main>
   )
 }
 

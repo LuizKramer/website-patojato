@@ -1,3 +1,4 @@
+'use client'
 import Sidebar from "./Sidebar"
 import { useState } from "react";
 // import { FaBars } from 'react-icons/fa'
@@ -30,7 +31,7 @@ const Nav = () => {
   // Verifica se a tela é pequena
 
   return (
-    <nav className="bg-gray-50 p-2 flex justify-between items-center fixed">
+    <nav className="bg-red-500 w-full h-screen p-2 flex justify-between items-center ">
 
       <button id="hamburger-button" type="button" onClick={toggleSidebar}
         className="" aria-controls="navbar-hamburger" aria-expanded={isSidebarOpen}>
